@@ -21,6 +21,9 @@
         <main class="py-4"> --}}
         @include('layouts.nav')
         @yield('content')
+        @vite('resources/js/app.js')
+        @include('sweetalert::alert')
+        @stack('scripts')
         {{-- </main>
     </div> --}}
 </body>
